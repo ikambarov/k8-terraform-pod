@@ -1,7 +1,7 @@
 terraform {
   backend "kubernetes" {
     secret_suffix    = "state"
-    load_config_file = false
+    in_cluster_config = true
   }
 }
 
